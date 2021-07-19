@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import Profile from './components/Profile';
 import profile from './user.json';
 import StatsList from './components/StatsList';
