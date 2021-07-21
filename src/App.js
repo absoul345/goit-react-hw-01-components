@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import Profile from './components/profile/Profile';
 import StatsList from './components/stats/StatsList';
 import FriendsList from './components/friends/FriendsList';
