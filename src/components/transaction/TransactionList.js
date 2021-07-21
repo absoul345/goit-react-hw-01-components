@@ -13,13 +13,12 @@ const TransactionList = ({ transaction }) => {
 };
 
 TransactionList.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      type: PropTypes.string.isRequired,
-      amount: PropTypes.string.isRequired,
-      currency: PropTypes.string.isRequired,
-    }),
-  ),
+  transaction: PropTypes.shape({
+    type: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    amount: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default TransactionList;

@@ -24,12 +24,4 @@ TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-TransactionHistory.propTypes = {
-  transaction: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-    }),
-  ),
-};
-
 export default TransactionHistory;

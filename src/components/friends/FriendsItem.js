@@ -25,14 +25,12 @@ FriendsItem.defaultProp = {
 };
 
 FriendsItem.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      avatar: PropTypes.string,
-      name: PropTypes.string.isRequired,
-      isOnline: PropTypes.bool.isRequired,
-      id: PropTypes.number.isRequired,
-    }),
-  ),
+  item: PropTypes.shape({
+    avatar: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    id: PropTypes.number.isRequired,
+  }),
 };
 
 export default FriendsItem;

@@ -15,12 +15,10 @@ const App = () => {
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        likes={user.stats.likes}
-        followers={user.stats.followers}
-        views={user.stats.views}
+        stats={user.stats}
       />
 
-      <StatsList items={stats} />
+      <StatsList stats={stats} title="Upload Stats" />
 
       <FriendsList items={friends} />
 
