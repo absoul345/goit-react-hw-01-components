@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Stats.module.css';
 
-const StatsList = ({ items }) => (
-  <section className="statistics">
-    <h2 className="title">Upload stats</h2>
-    <ul className="stat-list">
+const StatsUl = ({ items }) => {
+  return (
+    <ul className={styles.statList}>
       {items.map(({ id, label, percentage }) => (
         <li className="item" key={id}>
-          <span className="label">{label}</span>
-          <span className="percentage">{percentage}</span>
+          <span className={styles.label}>{label}</span>
+          <span className={styles.percentage}>{percentage}%</span>
         </li>
       ))}
     </ul>
-  </section>
-);
+  );
+};
 
-StatsList.propTypes = {
+StatsUl.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -25,4 +25,4 @@ StatsList.propTypes = {
   ),
 };
 
-export default StatsList;
+export default StatsUl;
